@@ -1,0 +1,16 @@
+{
+  "name": "leaf_app",
+  "version": "1.0.0",
+  "description": "Leaf - Growing meaningful professional connections",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "test": "concurrently \"cd server && npm test\" \"cd client && npm test\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
